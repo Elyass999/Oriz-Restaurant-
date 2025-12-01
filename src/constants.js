@@ -1,0 +1,328 @@
+export const NAV_LINKS = [
+  { name: 'Acceuil', href: '#home' },
+  { name: 'Menu', href: '#menu' },
+  { name: 'Gallery', href: '#gallery' },
+  { name: 'A Propos', href: '#about' },
+  { name: 'Contact', href: '#contact' },
+  { name: 'Location', href: '#localisation-section' },
+];
+
+export const MENU_ITEMS = [
+  //Pizza Slice
+  {
+    id: 1,
+    name: 'Pizza_fruit_Maire',
+    description: '',
+    price: '60 dh',
+    category: 'Pizza',
+    image: 'src/Plats/Pizza/Pizza_fruit_Maire.jpg',
+  },
+  {
+    id: 2,
+    name: 'Pizza_margarita',
+    description: '',
+    price: '40 dh',
+    category: 'Pizza',
+    image: 'src/Plats/Pizza/Pizza_margarita.jpg',
+  },
+
+  {
+    id: 3,
+    name: 'Pizza Quatre Fromages',
+    description: '',
+    price: '50 dh',
+    category: 'Pizza',
+    image: 'src/Plats/Pizza/Pizza Quatre Fromages.jpg',
+  },
+  {
+    id: 4,
+    name: 'Pizza Végétarienne',
+    description: '',
+    price: '50 dh',
+    category: 'Pizza',
+    image: 'src/Plats/Pizza/Pizza Végétarienne.jpg',
+  },
+  {
+    id: 5,
+    name: 'Pizza Poulet',
+    description: '',
+    price: '50 dh',
+    category: 'Pizza',
+    image: 'src/Plats/Pizza/Pizza Poulet.jpg',
+  },
+  {
+    id: 6,
+    name: 'Pizza Quatre Saisons',
+    description: '',
+    price: '60 dh',
+    category: 'Pizza',
+    image: 'src/Plats/Pizza/Pizza Quatre Saisons.jpg',
+  },
+  {
+    id: 7,
+    name: 'Pizza Viande Hashe',
+    description: '',
+    price: '50 dh',
+    category: 'Pizza',
+    image: 'src/Plats/Pizza/Pizza_Viande_Hashe.jpg',
+  },
+
+
+  //Salade Slice
+  {
+    id: 8,
+    name: 'Salade César',
+    description: '',
+    price: '45 dh',
+    category: 'Salads',
+    image: 'src/Plats/Salad/Salade César.jpg',
+  },
+  {
+    id: 9,
+    name: 'Salade Italie',
+    description: '',
+    price: '40 dh',
+    category: 'Salads',
+    image: 'src/Plats/Salad/Salade Italie.jpg',
+  },
+  {
+    id: 10,
+    name: 'Salade Marocaine',
+    description: '',
+    price: '25 dh',
+    category: 'Salads',
+    image: 'src/Plats/Salad/Salade Marocaine.jpg',
+  },
+  {
+    id: 11,
+    name: 'Salade Oriz',
+    description: '',
+    price: '45 dh',
+    category: 'Salads',
+    image: 'src/Plats/Salad/Salade Oriz.jpg',
+  },
+  {
+    id: 12,
+    name: 'Salade Poulet',
+    description: '',
+    price: '35 dh',
+    category: 'Salads',
+    image: 'src/Plats/Salad/Salade Poulet.jpg',
+  },
+  {
+    id: 13,
+    name: 'Salade Variée',
+    description: '',
+    price: '33 dh',
+    category: 'Salads',
+    image: 'src/Plats/Salad/Salade Variée.jpg',
+  },
+
+  //Burger Slice
+
+  {
+    id: 14,
+    name: 'Cheese Burger',
+    description: '',
+    price: '$14',
+    category: 'Burgers',
+    image: 'src/Plats/Burger/Burger_Cheese.jpg',
+  },
+  {
+    id: 15,
+    name: 'Chicken Burger',
+    description: '',
+    price: '$18',
+    category: 'Burgers',
+    image: 'src/Plats/Burger/Burger_Chicken.jpg',
+  },
+  {
+    id: 16,
+    name: 'Double Cheese Burger',
+    description: '',
+    price: '$18',
+    category: 'Burgers',
+    image: 'src/Plats/Burger/Burger_Double_Cheeses.jpg',
+  },
+
+  //Panini Slice
+
+  {
+    id: 17,
+    name: 'Panini Mix',
+    description: '',
+    price: '40 dh',
+    category: 'Panini',
+    image: 'src/Plats/Panini/Panini mixte.jpg',
+  },
+  {
+    id: 18,
+    name: 'Panini Viande Hachee',
+    description: '',
+    price: '35 dh',
+    category: 'Panini',
+    image: 'src/Plats/Panini/Panini viande hachee.jpg',
+  },
+  {
+    id: 19,
+    name: 'Panini Charcutrie',
+    description: '',
+    price: '35 dh',
+    category: 'Panini',
+    image: 'src/Plats/Panini/Panini_charcutrie.jpg',
+  },
+  {
+    id: 20,
+    name: 'Panini Chawarma (Fromage Tranche)',
+    description: '',
+    price: '38 dh',
+    category: 'Panini',
+    image: 'src/Plats/Panini/Panini Chawarma (Fromage Tranche).jpg',
+  },
+  {
+    id: 21,
+    name: 'Panini Fruits De Mer',
+    description: '',
+    price: '40 dh',
+    category: 'Panini',
+    image: 'src/Plats/Panini/Panini Fruits De Mer.jpg',
+  },
+  
+  {
+    id: 23,
+    name: 'Panini Tihal',
+    description: '',
+    price: '35 dh',
+    category: 'Panini',
+    image: 'src/Plats/Panini/Panini Tihal.jpg',
+  },
+
+  //Tacos Slice
+
+  {
+    id: 24,
+    name: 'Tacos Gratiné Viande',
+    description: '',
+    price: '42 dh',
+    category: 'Tacos',
+    image: 'src/Plats/Tacos/Tacos gratiné viande hachee.jpg',
+  },
+  {
+    id: 25,
+    name: 'Tacos Gratiné Nugget',
+    description: '',
+    price: '42 dh',
+    category: 'Tacos',
+    image: 'src/Plats/Tacos/Tacos gratinee nugget.jpg',
+  },
+  {
+    id: 26,
+    name: 'Tacos Gratiné Saucisse',
+    description: '',
+    price: '42 dh',
+    category: 'Tacos',
+    image: 'src/Plats/Tacos/Tacos gratinee saucisse.jpg',
+  },
+  {
+    id: 27,
+    name: 'Tacos Fruit De Mer',
+    description: '',
+    price: '42 dh',
+    category: 'Tacos',
+    image: 'src/Plats/Tacos/Tacos Fruit De Mer.jpg',
+  },
+  {
+    id: 28,
+    name: 'Tacos Mix',
+    description: '',
+    price: '42 dh',
+    category: 'Tacos',
+    image: 'src/Plats/Tacos/Tacos Mix.jpg',
+  },
+  {
+    id: 29,
+    name: 'Tacos Nuggets',
+    description: '',
+    price: '38 dh',
+    category: 'Tacos',
+    image: 'src/Plats/Tacos/Tacos Nuggets.jpg',
+  },
+  {
+    id: 30,
+    name: 'Tacos Tihal',
+    description: '',
+    price: '37 dh',
+    category: 'Tacos',
+    image: 'src/Plats/Tacos/Tacos Tihal.jpg',
+  },
+  //Plats Slice
+  {
+    id: 31,
+    name: 'Plat Chawarma',
+    description: '',
+    price: '47 dh',
+    category: 'Plats',
+    image: 'src/Plats/Plats/Plat chawarma.jpg',
+  },
+  {
+    id: 32,
+    name: 'Plat de payla',
+    description: '',
+    price: '40 dh',
+    category: 'Plats',
+    image: 'src/Plats/Plats/Plat de payla.png',
+  },
+  // {
+  //   id: 33,
+  //   name: 'Plat supplementaire',
+  //   description: '',
+  //   price: '',
+  //   category: 'Plats',
+  //   image: 'src/Plats/Plats/Plat supplementaire.png',
+  // },
+  {
+    id: 34,
+    name: 'Plat De Dinde',
+    description: '',
+    price: '42 dh',
+    category: 'Plats',
+    image: 'src/Plats/Plats/Plat De Dinde.jpg',
+  },
+  {
+    id: 35,
+    name: 'Plat Viande Hachée',
+    description: '',
+    price: '42 dh',
+    category: 'Plats',
+    image: 'src/Plats/Plats/Plat Viande Hachée.jpg',
+  },
+  {
+    id: 36,
+    name: 'Plat Saucisse',
+    description: '',
+    price: '42 dh',
+    category: 'Plats',
+    image: 'src/Plats/Plats/Plat Saucisse.jpg',
+  },
+  {
+    id: 37,
+    name: 'Plat Cordon Bleu',
+    description: '',
+    price: '42 dh',
+    category: 'Plats',
+    image: 'src/Plats/Plats/Plat Cordon Bleu.jpg',
+  },
+
+
+];
+
+export const GALLERY_IMAGES = [
+  { id: 1, src: 'src/Gallery/G1.jpg', alt: '', span: true },
+  // { id: 2, src: 'src/Gallery/G2.jpg', alt: '' },
+  { id: 2, src: 'src/Reel Oriz Gallery.mp4', alt: '' },
+  { id: 3, src: 'src/Gallery/G3.jpg', alt: '' },
+  { id: 4, src: 'src/Gallery/G4.jpg', alt: '' },
+  { id: 5, src: 'src/Gallery/G7.jpg', alt: '' },
+
+];
+

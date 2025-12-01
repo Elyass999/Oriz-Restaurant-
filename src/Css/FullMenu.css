@@ -1,0 +1,157 @@
+/* FullMenu.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.full-menu-section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5; /* Light background for contrast */
+  overflow: hidden;
+  position: relative;
+}
+
+.title-wrapper {
+  position: absolute;
+  top: 5vh;
+  z-index: 100;
+  width: 100%;
+  text-align: center;
+}
+
+.scroll-instruction {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 0.5rem;
+  opacity: 0.7;
+}
+
+/* 1. The 3D Stage 
+   Perspective determines how "deep" the 3D effect looks.
+*/
+.book-perspective {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 2000px; /* High value = Subtle 3D, Low value = Extreme fisheye */
+}
+
+/* 2. The Book Container (Spine)
+   Holds the pages. 
+*/
+.book-spine {
+  position: relative;
+  width: 40vh; /* Adjust based on your image aspect ratio */
+  height: 60vh;
+  transform-style: preserve-3d;
+}
+
+/* Media query for desktop to make it larger */
+@media (min-width: 768px) {
+  .book-spine {
+    width: 400px; 
+    height: 600px;
+  }
+}
+
+/* 3. The Individual Pages
+   Stacked absolutely on top of each other.
+*/
+.book-page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: left center; /* The hinge point */
+  transform-style: preserve-3d;
+  backface-visibility: hidden; /* Hides the back when flipped */
+  
+  /* border-radius helps the page look like paper.
+     The left side is flat (spine), right side slightly rounded 
+  */
+  border-radius: 2px 10px 10px 2px;
+  box-shadow: -1px 5px 15px rgba(0,0,0,0.1); 
+  background-color: white; /* Paper color */
+}
+
+/* This ensures the back of the page is not visible when flipped.
+   (It will look like the page disappears to the left, revealing the next one)
+   If you want to see the mirror image, remove this property.
+*/
+.book-page {
+  backface-visibility: hidden;
+}
+
+.page-content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 2px 10px 10px 2px;
+  background: #fff;
+}
+
+.page-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Use 'contain' if you want to see the whole menu without cropping */
+}
+
+/* Dynamic Lighting 
+   The shadow fades out as the page lifts 
+*/
+.page-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0));
+  pointer-events: none;
+  opacity: 0; /* JS controls this */
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .book-spine {
+    width: 80vw;
+    height: 65vh;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
